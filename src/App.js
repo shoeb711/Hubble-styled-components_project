@@ -4,7 +4,8 @@ import { Container } from './components/styles/Container.styled';
 import GlobalStyles from './components/styles/Global';
 //components
 import Header from './components/Header';
-import { Fragment } from 'react';
+import content from './content';
+import { Card } from './components/Card';
 
 const theme = {
   colors: {
@@ -22,7 +23,9 @@ function App() {
       <GlobalStyles />
         <Header />
         <Container>
-          <h1>Hello</h1>
+          {content.map((item,idx) => (
+           <Card key={idx} item={item} />
+          ))}
         </Container>
       </>
     </ThemeProvider>
