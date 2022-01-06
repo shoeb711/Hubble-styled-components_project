@@ -9,7 +9,7 @@ export const Card = ({ item: { id, title, body, image } }) => {
       </div>
       <div>
         <img src={`images/${image}`} alt='' />
-      </div>
+      </div>    
     </StyledCard>
   );
 };

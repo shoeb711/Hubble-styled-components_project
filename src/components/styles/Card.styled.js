@@ -9,6 +9,8 @@ export const StyledCard = styled.div`
   margin: 40px 0;
   padding: 60px;
   flex-direction: ${({layout}) => layout || 'row'};
+
+
   img {
     width: 83%;
   }
@@ -17,11 +19,11 @@ export const StyledCard = styled.div`
     flex: 1;
   }
 
-  /* @media (max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     text-align: center;
     img {
-      margin: 30px 20px;
+      margin: 30px 20px; 
     }
-  } */
+  }
 `;
